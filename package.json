@@ -10,7 +10,7 @@
     "keywords": [
         "Lumix"
     ],
-    "author": "Keerat666,Jasleen101010,Sanjeev17",
+    "author": "Keerat666,Jasleen101010",
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",
