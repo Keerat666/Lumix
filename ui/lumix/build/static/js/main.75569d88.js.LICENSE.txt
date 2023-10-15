@@ -1,3 +1,9 @@
+/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/
+
 /**
  * @license React
  * react-dom.production.min.js
@@ -40,26 +46,6 @@
 
 /**
  * @remix-run/router v1.9.0
- *
- * Copyright (c) Remix Software Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.md file in the root directory of this source tree.
- *
- * @license MIT
- */
-
-/**
- * Prism: Lightweight, robust, elegant syntax highlighting
- *
- * @license MIT <https://opensource.org/licenses/MIT>
- * @author Lea Verou <https://lea.verou.me>
- * @namespace
- * @public
- */
-
-/**
- * React Router DOM v6.16.0
  *
  * Copyright (c) Remix Software Inc.
  *
