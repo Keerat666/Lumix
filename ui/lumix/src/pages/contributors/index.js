@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LumixHeader from "../../components/Header";
 import "./style.css"; // Import a custom CSS file for styling
 
 const Contributors = () => {
@@ -10,39 +11,20 @@ const Contributors = () => {
     { name: "Sarthak Sharma", github: "https://github.com/SuperALKALINEdroiD" },
     { name: "Yassine Ait Rahou", github: "https://github.com/Yassin-Aru" },
 
-
     // Add your name if you are raising your PR
   ];
 
   return (
     <div className="d-flex flex-column min-vh-100">
       {/* Header */}
-      <header className="bg-dark text-white py-4">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-1">
-              <Link to="/" className="text-white text-decoration-none">
-                <h1>Lumix</h1>
-              </Link>
-            </div>
-            <div className="col-md-11 text-end">
-              <Link
-                to="/contributors"
-                className="text-white text-decoration-none"
-              >
-                <h5>Contributors of Lumix</h5>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </header>
 
+      <LumixHeader></LumixHeader>
       {/* Founder Section */}
       <section className="container mt-4 text-left">
         <h2>Meet the Maintainer</h2>
         <p>
           Hey there, I'm Gurkeerat, and you might know me as "keerat666" on
-          GitHub. Coding is not just my passion; it's my way of life. 🌟
+          GitHub.
         </p>
         <p>
           I'm on an exciting journey of transitioning into the world of open
