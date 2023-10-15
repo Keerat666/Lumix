@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import Image from "../../components/Image";
 import "./style.css"; // Create a separate CSS file for custom styles
 import Prism from "prismjs";
+import { Link } from "react-router-dom";
 
 const Documentation = () => {
   const handleOnClick = () => {
@@ -13,14 +14,23 @@ const Documentation = () => {
     <div className="d-flex flex-column min-vh-100">
       {/* Header */}
       <header className="bg-dark text-white py-4">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-md-1"> {/* Adjust the column width as needed */}
+      <Link to="/" className="text-white text-decoration-none">
               <h1>Lumix</h1>
-            </div>
-          </div>
-        </div>
-      </header>
+            </Link>
+      </div>
+      <div className="col-md-11 text-end"> {/* Add text-end class for right alignment */}
+        <Link to="/contributors" className="text-white text-decoration-none">
+              <h5>Contributors of Lumix</h5>
+            </Link>
+      </div>
+    </div>
+  </div>
+</header>
+
+
 
       <div className="container flex-grow-1 text-left">
         <div className="row">

@@ -1,0 +1,50 @@
+/* Documentation.css */
+.header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .text-left {
+    text-align: left;
+    margin-top: 2%;
+  }
+  .button-margin
+  {
+      margin-left : 1%;
+  }
+
+  /* Contributors.css */
+
+.contributors-list {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contributors-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contributors-list li {
+  margin-bottom: 10px;
+}
+
+.contributors-list a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.contributors-list a:hover {
+  text-decoration: underline;
+}
+
+  
