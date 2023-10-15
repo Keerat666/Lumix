@@ -7,6 +7,8 @@ const Contributors = () => {
   const contributors = [
     { name: "Jasleen Sondhi", github: "https://github.com/jasleen101010" },
     { name: "Aditya Kumar", github: "https://github.com/adityaK87" },
+    { name: "Sarthak Sharma", github: "https://github.com/SuperALKALINEdroiD" },
+
     // Add your name if you are raising your PR
   ];
 
