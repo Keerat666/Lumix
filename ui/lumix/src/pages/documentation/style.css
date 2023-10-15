@@ -1,0 +1,19 @@
+/* Documentation.css */
+.header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.text-left {
+  text-align: left;
+  margin-top: 2%;
+}
+.button-margin
+{
+    margin-left : 1%;
+}
