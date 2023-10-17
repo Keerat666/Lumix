@@ -99,7 +99,7 @@ const Documentation = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="documentation-section mb-2">
-              <h4 className="section-title">Lumix Star Rating</h4>
+              <h4 className="section-title">Lumix Spinner</h4>
               <p>Try out Lumix Spinner Component</p>
 
               <h5 className="section-subtitle">
