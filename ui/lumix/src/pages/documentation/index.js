@@ -1,12 +1,16 @@
 import React from "react";
 import Button from "../../components/Button";
+import StarRating from "../../components/star-rating/StarRating";
 import Image from "../../components/Image";
-import "./style.css"; // Create a separate CSS file for custom styles
 import LumixHeader from "../../components/Header";
 import { ProfileSkeleton } from "../../components/SkeletonLoaders/ProfileSkeleton";
 import CircleSkeleton from "../../components/SkeletonLoaders/CircleSkeleton";
 import RectangleSkeleton from "../../components/SkeletonLoaders/RectangleSkeleton";
 import TableSkeleton from "../../components/SkeletonLoaders/TableSkeleton";
+
+import "./style.css"; // Create a separate CSS file for custom styles
+import Loader from "../../components/Loading-spin/Loader";
+
 
 const Documentation = () => {
   const handleOnClick = () => {
@@ -51,6 +55,71 @@ const Documentation = () => {
                 handleOnClick={handleOnClick}
                 className="btn btn-danger btn-lg btn-block w-25 button-margin"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Star Rating</h4>
+              <p>Try out Lumix star rating component.</p>
+
+              <h5 className="section-subtitle">
+                To create a rating component in Lumix, use the following code snippet:
+              </h5>
+              <pre>
+                <code className="language-javascript">
+                  {'<StarRating />'}
+                </code>
+              </pre>
+
+              <h5 className="section-subtitle">
+                API:
+              </h5>
+              <ul>
+                <li>maxRating (default: 5) - allows you to set the number of stars,</li>
+                <li>color (default: "#fcc419") - changes the star color,</li>
+                <li>size (default: 24) - sets the height and width of a single star,</li>
+                <li>className - add a class to the rating element,</li>
+                <li>messages - an array of messages to be displayed instead of the rating number,</li>
+                <li>defaultRating (default: 0) - sets the initial rating,</li>
+                <li>onSetRating - allows you to add onSetRating function in case the rating is needed outside the component,</li>
+              </ul>
+              <h5 className="section-title">Example Rating Component:</h5>
+              <StarRating />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Star Rating</h4>
+              <p>Try out Lumix Spinner Component</p>
+
+              <h5 className="section-subtitle">
+                To create a spinner component in Lumix, use the following code snippet:
+              </h5>
+              <pre>
+                <code className="language-javascript">
+                  {'<Loader />'}
+                </code>
+              </pre>
+
+              <h5 className="section-subtitle">
+                API:
+              </h5>
+              <ul>
+                <li>width - sets the width of the spinner</li>
+                <li>height - sets the height of the spinner</li>        
+              </ul>
+              <h5 className="section-title">Example Spinner Component:</h5>
+              <Loader />
             </div>
           </div>
         </div>

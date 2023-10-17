@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LumixHeader from "../../components/Header";
 import "./style.css"; // Import a custom CSS file for styling
 
@@ -11,7 +10,11 @@ const Contributors = () => {
     { name: "Sarthak Sharma", github: "https://github.com/SuperALKALINEdroiD" },
     { name: "Yassine Ait Rahou", github: "https://github.com/Yassin-Aru" },
     { name: "Harjot Singh", github: "https://github.com/HarjjotSinghh" },
+    { name: "Ayush Gupta", github: "https://github.com/AyusGup" },
+    { name: "Psychokot11", github: "https://github.com/psychokot11" },
     { name: "Kushal Verma", github: "https://github.com/vkushal28" }
+
+
 
     // Add your name if you are raising your PR
   ];
