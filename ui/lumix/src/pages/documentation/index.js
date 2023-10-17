@@ -3,6 +3,10 @@ import Button from "../../components/Button";
 import Image from "../../components/Image";
 import "./style.css"; // Create a separate CSS file for custom styles
 import LumixHeader from "../../components/Header";
+import { ProfileSkeleton } from "../../components/SkeletonLoaders/ProfileSkeleton";
+import CircleSkeleton from "../../components/SkeletonLoaders/CircleSkeleton";
+import RectangleSkeleton from "../../components/SkeletonLoaders/RectangleSkeleton";
+import TableSkeleton from "../../components/SkeletonLoaders/TableSkeleton";
 
 const Documentation = () => {
   const handleOnClick = () => {
@@ -81,11 +85,85 @@ const Documentation = () => {
         </div>
       </div>
 
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Skeleton loaders</h4>
+              <ol>
+                <li>
+                  Profile
+                  <ProfileSkeleton />
+                  <h5 className="section-subtitle">
+                    To render this profile form of skeleton in Lumix, use the following code snippet:
+                  </h5>
+                  <pre>
+                    <code className="language-javascript">
+                      {
+                        '<ProfileSkeleton />'
+                      }
+                    </code>
+                  </pre>
+
+                  <ol type="a">
+                    <li>
+                      <p style={{ fontStyle: "italic", textDecoration: "underline" }}>Circle</p>
+                      <CircleSkeleton customize />
+
+                      <h5 className="section-subtitle">
+                        To render this circular form of skeleton in Lumix, use the following code snippet:
+                      </h5>
+                      <pre>
+                        <code className="language-javascript">
+                          {
+                            '<CircleSkeleton customize />'
+                          }
+                        </code>
+                      </pre>
+                    </li>
+                    <li>
+                      <p style={{ fontStyle: "italic", textDecoration: "underline" }}>Rectangle</p>
+                      <RectangleSkeleton customize />
+                      <h5 className="section-subtitle">
+                        To render this rectangle form of skeleton in Lumix, use the following code snippet:
+                      </h5>
+                      <pre>
+                        <code className="language-javascript">
+                          {
+                            ' <RectangleSkeleton customize />'
+                          }
+                        </code>
+                      </pre>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Table
+                  <div style={{ display: "block", maxWidth: "100%", overflowX: "scroll", overflowY: "hidden", marginBottom: "20px" }}>
+                    <TableSkeleton columns={6} rows={6} customize />
+                  </div>
+                  <h5 className="section-subtitle">
+                    To render this table form of skeleton in Lumix, use the following code snippet:
+                  </h5>
+                  <pre>
+                    <code className="language-javascript">
+                      {
+                        '< TableSkeleton columns={6} rows={6} customize />'
+                      }
+                    </code>
+                  </pre>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <footer className="bg-dark text-white text-center py-2">
         &copy; Lumix - A HacktoberFest 2023 innovation!
       </footer>
-    </div>
+    </div >
   );
 };
 

@@ -10,7 +10,8 @@ const Contributors = () => {
     { name: "Aditya Kumar", github: "https://github.com/adityaK87" },
     { name: "Sarthak Sharma", github: "https://github.com/SuperALKALINEdroiD" },
     { name: "Yassine Ait Rahou", github: "https://github.com/Yassin-Aru" },
-    { name: "Harjot Singh", github: "https://github.com/HarjjotSinghh" }
+    { name: "Harjot Singh", github: "https://github.com/HarjjotSinghh" },
+    { name: "Kushal Verma", github: "https://github.com/vkushal28" }
 
     // Add your name if you are raising your PR
   ];
