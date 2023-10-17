@@ -32,7 +32,9 @@ To get started, clone this repo and begin contributing to make it even better. I
 
 Our heartfelt thanks go out to all the amazing contributors who have played a pivotal role in shaping Lumix into what it is today.
 
-[![Contributors](https://contrib.rocks/image?repo=keerat666/Lumix)](https://github.com/keerat666/Lumix/graphs/contributors)
+<a href="https://github.com/keerat666/lumix/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=keerat666/lumix" />
+</a>
 
 Made with [contrib.rocks](https://contrib.rocks).
 
