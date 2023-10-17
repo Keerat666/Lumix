@@ -5,6 +5,7 @@ import Image from "../../components/Image";
 import LumixHeader from "../../components/Header";
 
 import "./style.css"; // Create a separate CSS file for custom styles
+import Loader from "../../components/Loading-spin/Loader";
 
 
 const Documentation = () => {
@@ -85,6 +86,36 @@ const Documentation = () => {
               </ul>
               <h5 className="section-title">Example Rating Component:</h5>
               <StarRating />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Star Rating</h4>
+              <p>Try out Lumix Spinner Component</p>
+
+              <h5 className="section-subtitle">
+                To create a spinner component in Lumix, use the following code snippet:
+              </h5>
+              <pre>
+                <code className="language-javascript">
+                  {'<Loader />'}
+                </code>
+              </pre>
+
+              <h5 className="section-subtitle">
+                API:
+              </h5>
+              <ul>
+                <li>width - sets the width of the spinner</li>
+                <li>height - sets the height of the spinner</li>        
+              </ul>
+              <h5 className="section-title">Example Spinner Component:</h5>
+              <Loader />
             </div>
           </div>
         </div>
