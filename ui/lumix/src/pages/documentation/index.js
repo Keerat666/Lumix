@@ -7,18 +7,20 @@ import { ProfileSkeleton } from "../../components/SkeletonLoaders/ProfileSkeleto
 import CircleSkeleton from "../../components/SkeletonLoaders/CircleSkeleton";
 import RectangleSkeleton from "../../components/SkeletonLoaders/RectangleSkeleton";
 import TableSkeleton from "../../components/SkeletonLoaders/TableSkeleton";
+import { useThemeContext } from "../../context/themeContext";
 
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
 
 
 const Documentation = () => {
+  const {theme} = useThemeContext()
   const handleOnClick = () => {
     alert("Handle onClick is called");
   };
 
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className={`d-flex flex-column min-vh-100 ${theme && "bg-dark text-light"}`}>
       {/* Header */}
 
       <LumixHeader></LumixHeader>
