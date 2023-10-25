@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../components/Button";
 import Image from "../../components/Image";
 import "./style.css"; // Create a separate CSS file for custom styles
 import LumixHeader from "../../components/Header";
+import Rate from "../../components/Rate";
 
 const Documentation = () => {
   const handleOnClick = () => {
     alert("Handle onClick is called");
   };
+  const [rating, setRating] = useState(0);
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -79,6 +81,10 @@ const Documentation = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Rate rating={rating} onRating={(rate) => setRating(rate)} />
+        <p>Rating is {rating}</p>
       </div>
 
       {/* Footer */}
