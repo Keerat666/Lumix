@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../components/Button";
 import StarRating from "../../components/star-rating/StarRating";
 import Image from "../../components/Image";
 import LumixHeader from "../../components/Header";
+import Rate from "../../components/Rate";
 import { ProfileSkeleton } from "../../components/SkeletonLoaders/ProfileSkeleton";
 import CircleSkeleton from "../../components/SkeletonLoaders/CircleSkeleton";
 import RectangleSkeleton from "../../components/SkeletonLoaders/RectangleSkeleton";
 import TableSkeleton from "../../components/SkeletonLoaders/TableSkeleton";
 import { useThemeContext } from "../../context/themeContext";
-
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
 import DropDown from "../../components/DropDown";
@@ -18,6 +18,7 @@ const Documentation = () => {
   const handleOnClick = () => {
     alert("Handle onClick is called");
   };
+  const [rating, setRating] = useState(0);
   const options = [
     { label: "Select...", value: "" },
     { label: "Male", value: "male" },
@@ -170,6 +171,10 @@ const Documentation = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Rate rating={rating} onRating={(rate) => setRating(rate)} />
+        <p>Rating is {rating}</p>
       </div>
 
       <div className="container flex-grow-1 text-left">
