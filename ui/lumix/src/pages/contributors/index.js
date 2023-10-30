@@ -1,8 +1,10 @@
 import React from "react";
 import LumixHeader from "../../components/Header";
 import "./style.css"; // Import a custom CSS file for styling
+import { useThemeContext } from "../../context/themeContext";
 
 const Contributors = () => {
+  const {theme} = useThemeContext()
   // Define an array of contributors with their names and GitHub profiles
   const contributors = [
     { name: "Jasleen Sondhi", github: "https://github.com/jasleen101010" },
@@ -10,12 +12,15 @@ const Contributors = () => {
     { name: "Sarthak Sharma", github: "https://github.com/SuperALKALINEdroiD" },
     { name: "Yassine Ait Rahou", github: "https://github.com/Yassin-Aru" },
     { name: "Harjot Singh", github: "https://github.com/HarjjotSinghh" },
-
+    { name: "Ayush Gupta", github: "https://github.com/AyusGup" },
+    { name: "Psychokot11", github: "https://github.com/psychokot11" },
+    { name: "Kushal Verma", github: "https://github.com/vkushal28" },
+    { name: "Abdullah Ishtiaq", github: "https://github.com/AbdullahIshtiaqq" }
     // Add your name if you are raising your PR
   ];
 
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className={`d-flex flex-column min-vh-100 ${theme && "bg-dark text-light"}`}>
       {/* Header */}
 
       <LumixHeader></LumixHeader>
@@ -47,7 +52,7 @@ const Contributors = () => {
       </section>
 
       {/* Thank Contributors Section */}
-      <section className="container mt-4 text-left contributors-list">
+      <section className={`container mt-4 text-left contributors-list text-dark ${theme && "bg-dark text-white"}`}>
         <h2>Our Remarkable Contributors</h2>
         <p>
           I am deeply thankful to the individuals below whose exceptional
