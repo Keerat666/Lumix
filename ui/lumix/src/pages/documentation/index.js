@@ -12,12 +12,14 @@ import { useThemeContext } from "../../context/themeContext";
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
 import DropDown from "../../components/DropDown";
+import DatePicker from "../../components/DatePicker";
 
 const Documentation = () => {
   const { theme } = useThemeContext();
   const handleOnClick = () => {
     alert("Handle onClick is called");
   };
+  const [date, setDate] = useState(null);
   const [rating, setRating] = useState(0);
   const options = [
     { label: "Select...", value: "" },
@@ -175,6 +177,46 @@ const Documentation = () => {
       <div>
         <Rate rating={rating} onRating={(rate) => setRating(rate)} />
         <p>Rating is {rating}</p>
+      </div>
+
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Date Picker</h4>
+              <p>Enter or select a date with Lumix Date Picker</p>
+              <h5 className="section-subtitle">
+                To create a date picker component in Lumix, use the following
+                code snippet:
+              </h5>
+              <pre>
+                <code className="language-javascript">{"<DatePicker />"}</code>
+              </pre>
+              <h5 className="section-subtitle">API:</h5>
+              <ul>
+                <li>
+                  onDateChange (default: {`() => {}`}) - callback function that
+                  receives the date as its argument, allowing parent components
+                  to react to changes in the DatePicker's selected date
+                </li>
+                <li>
+                  borderColor (default: "#000000") - sets the border color
+                </li>
+                <li>borderWidth (default: 2) - sets the width of the border</li>
+                <li>fontSize (default: 20) - sets the size of the font</li>
+                <li>
+                  pickerHeight (default: 50) - sets the height of the component
+                </li>
+                <li>
+                  pickerWidth (default: 160) - sets the width of the component
+                </li>
+              </ul>
+              <h5 className="section-title">Example Date Picker:</h5>
+              <DatePicker onDateChange={setDate}/>
+              {"\t"}Date received from DatePicker: <b>{date}</b>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="container flex-grow-1 text-left">
