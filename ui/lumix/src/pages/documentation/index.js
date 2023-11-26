@@ -12,6 +12,7 @@ import { useThemeContext } from "../../context/themeContext";
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
 import DropDown from "../../components/DropDown";
+import Accordion from "../../components/Accordion";
 
 const Documentation = () => {
   const { theme } = useThemeContext();
@@ -175,6 +176,70 @@ const Documentation = () => {
       <div>
         <Rate rating={rating} onRating={(rate) => setRating(rate)} />
         <p>Rating is {rating}</p>
+      </div>
+
+      <div className="container flex-grow-1 text-left">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="documentation-section mb-2">
+              <h4 className="section-title">Lumix Accordion</h4>
+              <p>
+                Place your content in an expandable format with Lumix Accordion
+              </p>
+              <h5 className="section-subtitle">
+                To create an accordion component in Lumix, use the following
+                code snippet:
+              </h5>
+              <pre>
+                <code className="language-javascript">{`<Accordion
+                items={[
+                  {
+                    title: "Accordion Item 1,
+                    content: "This is the content for accordion item 1."
+                  }
+                ]}
+/>`}</code>
+              </pre>
+              <i>*Note: The items prop is an array of objects. Each object must have a title and content property.</i>
+              <h5 className="section-subtitle">API:</h5>
+              <ul>
+                <li>
+                  verticalAlignment (default: "flex-start") - sets the vertical alignment of the accordion
+                </li>
+                <li>
+                  titleColor (default: "#dbd9d9") - sets the color of the title div
+                </li>
+                <li>width (default: 800) - sets the width of the component </li>
+                <li>titleSize (default: 30) - sets the size of the font</li>
+                <li>
+                  contentSize (default: 20) - sets the size of the content font
+                </li>
+                <li>
+                  contentColor (default: "#e8e6e6") - sets the color of the content div
+                </li>
+              </ul>
+              <h5 className="section-title">Example Accordion:</h5>
+              <Accordion
+                items={[
+                  {
+                    title: "Accordion Item 1",
+                    content: "This is the content for accordion item 1.",
+                  },
+                  {
+                    title: "Accordion Item 2",
+                    content:
+                      "This is the content for accordion item 2.",
+                  },
+                  {
+                    title: "Accordion Item 3",
+                    content:
+                      "This is the content for accordion item 3.",
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="container flex-grow-1 text-left">
