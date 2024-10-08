@@ -15,7 +15,9 @@ const Contributors = () => {
     { name: "Ayush Gupta", github: "https://github.com/AyusGup" },
     { name: "Psychokot11", github: "https://github.com/psychokot11" },
     { name: "Kushal Verma", github: "https://github.com/vkushal28" },
-    { name: "Abdullah Ishtiaq", github: "https://github.com/AbdullahIshtiaqq" }
+    { name: "Abdullah Ishtiaq", github: "https://github.com/AbdullahIshtiaqq" },
+    { name: "Harsh Gawali", github: "https://github.com/HarshGawali007" }
+
     // Add your name if you are raising your PR
   ];
 
@@ -37,12 +39,19 @@ const Contributors = () => {
           everyone's reach. It's a powerful tool for change, innovation, and
           self-expression, and I'm committed to making it accessible to all who
           want to pick it up.
+
+          You can know more about me at {" "}
+          <a href="https://gurkeerat.com" target="_blank">
+            Portfolio Site
+          </a>
         </p>
         <p>
           Lumix is a project close to my heart, and it reflects this vision.
           It's a platform where creativity meets code, and together, we're
           building an outstanding UI library for all. Feel free to connect with
-          me anytime; I'm here to help and collaborate. You can reach me at{" "}
+          me anytime; I'm here to help and collaborate. 
+          
+          You can reach out to me at{" "}
           <a href="mailto:gurkeeratsondhi@gmail.com">
             gurkeeratsondhi@gmail.com
           </a>
