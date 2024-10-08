@@ -29,9 +29,8 @@ const Documentation = () => {
 
   return (
     <div
-      className={`d-flex flex-column min-vh-100 ${
-        theme && "bg-dark text-light"
-      }`}
+      className={`d-flex flex-column min-vh-100 ${theme && "bg-dark text-light"
+        }`}
     >
       {/* Header */}
 
@@ -270,7 +269,7 @@ const Documentation = () => {
 
       {/* Footer */}
       <footer className="bg-dark text-white text-center py-2">
-        &copy; Lumix - A HacktoberFest 2023 innovation!
+        &copy; Lumix - A HacktoberFest 2024 innovation!
       </footer>
     </div>
   );
