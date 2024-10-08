@@ -4,7 +4,7 @@ import "./style.css"; // Import a custom CSS file for styling
 import { useThemeContext } from "../../context/themeContext";
 
 const Contributors = () => {
-  const {theme} = useThemeContext()
+  const { theme } = useThemeContext()
   // Define an array of contributors with their names and GitHub profiles
   const contributors = [
     { name: "Jasleen Sondhi", github: "https://github.com/jasleen101010" },
@@ -88,7 +88,7 @@ const Contributors = () => {
 
       {/* Footer */}
       <footer className="bg-dark text-white text-center py-2 mt-auto">
-        &copy; Lumix - A HacktoberFest 2023 innovation!
+        &copy; Lumix - A HacktoberFest 2024 innovation!
       </footer>
     </div>
   );
