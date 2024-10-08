@@ -269,7 +269,7 @@ const Documentation = () => {
 
       {/* Footer */}
       <footer className="bg-dark text-white text-center py-2">
-        &copy; Lumix - A HacktoberFest 2024 innovation!
+        &copy; Lumix - A HacktoberFest {new Date().getFullYear()} innovation!
       </footer>
     </div>
   );
