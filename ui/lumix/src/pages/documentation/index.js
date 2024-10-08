@@ -35,7 +35,7 @@ const Documentation = () => {
       {/* Header */}
 
       <LumixHeader></LumixHeader>
-      <DropDown options={options} />
+      {/* <DropDown options={options} /> */}
       <div className="container flex-grow-1 text-left">
         <div className="row">
           <div className="col-md-12">
