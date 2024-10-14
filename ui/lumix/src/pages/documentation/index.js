@@ -12,13 +12,30 @@ import { useThemeContext } from "../../context/themeContext";
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
 import DropDown from "../../components/DropDown";
+import CustomToast from "../../components/CustomToast";
 import Accordion from "../../components/Accordion";
+
 
 const Documentation = () => {
   const { theme } = useThemeContext();
-  const handleOnClick = () => {
-    alert("Handle onClick is called");
-  };
+// Toast for Primary Button
+const primaryToast = CustomToast({
+  message: "Primary Button Clicked!", 
+  icon: "✅", 
+});
+
+// Toast for Warning Button
+const warningToast = CustomToast({
+  message: "Warning Button Clicked!",
+  icon: "⚠️", 
+});
+
+// Toast for Danger Button
+const dangerToast = CustomToast({
+  message: "Danger Button Clicked!", 
+  icon: "❌", 
+});
+
   const [rating, setRating] = useState(0);
   const options = [
     { label: "Select...", value: "" },
@@ -56,17 +73,17 @@ const Documentation = () => {
               <h5 className="section-title">Example Buttons:</h5>
               <Button
                 name="Primary Button"
-                handleOnClick={handleOnClick}
+                handleOnClick={primaryToast.showToast}
                 className="btn btn-primary btn-lg btn-block w-25"
               />
               <Button
                 name="Warning Button"
-                handleOnClick={handleOnClick}
+                handleOnClick={warningToast.showToast}
                 className="btn btn-warning btn-lg btn-block w-25 button-margin"
               />
               <Button
                 name="Danger Button"
-                handleOnClick={handleOnClick}
+                handleOnClick={dangerToast.showToast}
                 className="btn btn-danger btn-lg btn-block w-25 button-margin"
               />
             </div>

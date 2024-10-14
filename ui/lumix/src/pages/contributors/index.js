@@ -16,7 +16,8 @@ const Contributors = () => {
     { name: "Psychokot11", github: "https://github.com/psychokot11" },
     { name: "Kushal Verma", github: "https://github.com/vkushal28" },
     { name: "Abdullah Ishtiaq", github: "https://github.com/AbdullahIshtiaqq" },
-    { name: "Harsh Gawali", github: "https://github.com/HarshGawali007" }
+    { name: "Harsh Gawali", github: "https://github.com/HarshGawali007" },
+    { name: "Vinay Maurya", github: "https://github.com/mauryavinay1407" }
 
     // Add your name if you are raising your PR
   ];
