@@ -36,6 +36,11 @@ const dangerToast = CustomToast({
   icon: "❌", 
 });
 
+const imageToast = CustomToast({
+  message: "Image Clicked!", 
+  icon: "⚡️", 
+});
+
   const [rating, setRating] = useState(0);
   const options = [
     { label: "Select...", value: "" },
@@ -183,7 +188,7 @@ const dangerToast = CustomToast({
               <Image
                 src="https://placehold.co/300x300"
                 alt="Image in Lumix"
-                onClick={handleOnClick}
+                onClick={imageToast.showToast}
               ></Image>
             </div>
           </div>
