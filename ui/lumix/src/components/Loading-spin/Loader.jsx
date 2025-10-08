@@ -1,5 +1,4 @@
 import loader from "./loader.gif";
-import react from "react";
 
 function Loader(props) {
   return (

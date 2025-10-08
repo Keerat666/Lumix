@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Image = ({ label = 'Input', onChange, type = 'text', placeholder = 'Enter Text' }) => {
+const Input = ({ label = 'Input', onChange, type = 'text', placeholder = 'Enter Text' }) => {
   return (
     <div>
       <label>{label}</label>
@@ -14,4 +14,4 @@ const Image = ({ label = 'Input', onChange, type = 'text', placeholder = 'Enter 
   );
 };
 
-export default Image;
+export default Input;
