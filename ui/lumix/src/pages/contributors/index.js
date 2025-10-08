@@ -42,7 +42,7 @@ const Contributors = () => {
           want to pick it up.
 
           You can know more about me at {" "}
-          <a href="https://gurkeerat.com" target="_blank">
+          <a href="https://gurkeerat.com" target="_blank" rel="noopener noreferrer">
             Portfolio Site
           </a>
         </p>

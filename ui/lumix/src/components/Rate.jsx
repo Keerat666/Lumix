@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useCallback } from "react";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
 import PropTypes from "prop-types";
 function Rate({ count, rating, color, onRating }) {
   const [hoverRating, sethoverRating] = useState(0);
-  const getColor = (index) => {
+  const getColor = useCallback((index) => {
     if (hoverRating >= index) {
       return color.filled;
     } else if (!hoverRating && rating >= index) {
@@ -12,7 +12,7 @@ function Rate({ count, rating, color, onRating }) {
     } else {
       return color.unfilled;
     }
-  };
+  }, [hoverRating, rating, color]);
   const startRating = useMemo(() => {
     return Array(count)
       .fill(0)
@@ -27,7 +27,7 @@ function Rate({ count, rating, color, onRating }) {
           onMouseLeave={() => sethoverRating(0)}
         />
       ));
-  }, [count, rating, hoverRating]);
+  }, [count, getColor, onRating]);
   return <div>{startRating}</div>;
 }
 Rate.propTypes = {

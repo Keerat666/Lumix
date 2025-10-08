@@ -11,7 +11,7 @@ import TableSkeleton from "../../components/SkeletonLoaders/TableSkeleton";
 import { useThemeContext } from "../../context/themeContext";
 import "./style.css"; // Create a separate CSS file for custom styles
 import Loader from "../../components/Loading-spin/Loader";
-import DropDown from "../../components/DropDown";
+
 import CustomToast from "../../components/CustomToast";
 import Accordion from "../../components/Accordion";
 
@@ -42,13 +42,6 @@ const imageToast = CustomToast({
 });
 
   const [rating, setRating] = useState(0);
-  const options = [
-    { label: "Select...", value: "" },
-    { label: "Male", value: "male" },
-    { label: "Female", value: "female" },
-    { label: "Transgender", value: "transgender" },
-    { label: "Prefer Not to Say", value: "prefer not to say" },
-  ];
 
   return (
     <div
